@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entertainment Booking Form</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container"> 
+      // action = "register.html" method="get Need to input register.html for action and method to get
+      <form >
+        <div class="banner"><h1>Pet Reservations</h1></div>
+        <br>
+        <fieldset>
+            <legend>Owner Information</legend>
+            <div>
+                <label for="ownerName">Name:</label>
+                <input type="text" id="ownerName" name="ownerName" size="150">
+                <span>*</span>
+            </div>
+            <div>
+                <p>Address:</p>
+                <input type="text" id="streetAddr" name="streetAddr" size="150"
+                  placeholder="Street Address">
+                <span>*</span>
+            </div>
+            <div>
+                <input type="text" id="city" name="city" size="150"
+                  placeholder="City Name">
+                <span>*</span>
+            </div>
+            <div>
+                <input type="text" id="zipCode" name="zipCode" size="50"
+                  placeholder="ZipCode">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" size="120"
+                  placeholder="999-999-9999">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="150">
+                <span>*</span>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pet Stay Information</legend>
+            <div>
+                <label for="dropOffDate">Drop Off Date:</label>
+                <input type="date" id="dropOffDate" name="dropOffDate" size="150">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="dropOffTime">Drop Off Time:</label>
+                <input type="time" id="dropOffTime" name="dropOffTime" size="150">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="pickUpDate">Pick Up Date:</label>
+                <input type="date" id="pickUpDate" name="pickUpDate" size="150">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="pickUpTime">Pick Up Time:</label>
+                <input type="time" id="pickUpTime" name="pickUpTime" size="150">
+                <span>*</span>
+            </div>
+            <div>
+                <div class="inError">*</div>
+                <textarea cols="150" rows="3" name="comments" id="comments"
+                  placeholder="Number of Pets and if multiple pets will be lodging together"></textarea>
+                
+             </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Emergency Contact Information</legend>
+            <div>
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" name="contactName" size="150">
+                <span>*</span>
+              </div>
+              <div>
+                <label for="contactPhone">Phone Number:</label>
+                <input type="tel" id="contactPhone" name="contactPhone" size="120">
+                <span>*</span>
+              </div>
+        </fieldset> 
+        <br>
+        <div>
+          <input type="reset" id="reset" name="reset" value="Reset">  
+          <input type="submit" id="registerStay" name="registerStay" value="Register">
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

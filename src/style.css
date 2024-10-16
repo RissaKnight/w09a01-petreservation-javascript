@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Roboto:wght@300;400;500;700&family=Syne+Tactile&display=swap');
+html, body {
+    min-height: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body, div, form, input, select, textarea, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 800;
+    color: #FFF;
+    z-index: 2;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 10px;
+}
+form {
+    width: 75%;
+    padding: 20px;
+    background: #fff;
+    border: solid 2px #474647!important;
+}
+.banner {
+    position: relative;
+    height: 400px;
+    background-image: url("animals.jpg");      
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+input, textarea, select {
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc;
+    border-radius: 3px; */
+}
+span {
+    color: red;
+    font-size: 14px;
+}
+.inError {
+    color: red;
+    font-size: 14px;
+}
+input[type=submit],input[type=reset] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #2e201f;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
